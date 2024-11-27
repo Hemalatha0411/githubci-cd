@@ -61,7 +61,7 @@ jobs:
       # Run commands on EC2 instance
       - name: Run Command on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no -i github.pem ubuntu@${{ secrets.EC2_PUBLIC_DNS }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i github.pem ec2-user@${{ secrets.EC2_PUBLIC_DNS }} << 'EOF'
           echo "Running commands on EC2 instance"
           sudo docker pull ${{ secrets.DOCKER_IMAGE }}
           sudo docker run -d -p 80:80 ${{ secrets.DOCKER_IMAGE }}
