@@ -31,4 +31,4 @@ jobs:
       # Sync files to the S3 bucket
       - name: Sync Files to S3
         run: |
-          aws s3 sync ./path/to/local/files s3://${{ secrets.S3_BUCKET }} --delete
+          aws s3 sync . s3://${{ secrets.S3_BUCKET }} --delete
