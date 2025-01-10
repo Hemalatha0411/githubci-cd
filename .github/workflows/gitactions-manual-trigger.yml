@@ -1,15 +1,10 @@
-name: CI/CD Pipeline
+name: Manual Trigger Workflow
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  manual-job:
     runs-on: ubuntu-latest
 
     steps:
