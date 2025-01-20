@@ -1,1 +1,1 @@
-print  ("Welcome to the Github Action usecase")
+print("Welcome to the Github Action usecase")
