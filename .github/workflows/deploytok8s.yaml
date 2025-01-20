@@ -33,4 +33,4 @@ jobs:
  
       - name: run Kubectl commands
         run: |
-          kubectl run test-nginx --image=nginx
+          kubectl run test-nginx --image=httpd
