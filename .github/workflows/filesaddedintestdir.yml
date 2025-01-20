@@ -3,7 +3,7 @@ name: Run on New Files in Folder
 on:
   push:
     paths:
-      - test/**
+      - Jan/**
 
 jobs:
   run-on-new-files:
